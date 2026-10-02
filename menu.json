@@ -1,0 +1,170 @@
+{
+  "aviso": "Menú de ejemplo: los platos y precios son ilustrativos mientras recibimos la carta oficial.",
+  "categorias": [
+    {
+      "id": "parrilla",
+      "nombre": "Parrilla",
+      "descripcion": "Cortes y carnes a las brasas, para disfrutar sin afán.",
+      "imagen": "imagenes/carne-parrilla.jpg",
+      "imagenAlt": "Cortes de carne dorándose sobre la parrilla",
+      "platos": [
+        {
+          "nombre": "Punta de anca (300 g)",
+          "descripcion": "Corte jugoso a la brasa con papa criolla, chimichurri de la casa y ensalada fresca.",
+          "precio": 48000,
+          "ejemplo": true,
+          "destacado": true
+        },
+        {
+          "nombre": "Churrasco (350 g)",
+          "descripcion": "Con papas a la francesa, ensalada de la casa y salsa chimichurri.",
+          "precio": 52000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Costillas BBQ",
+          "descripcion": "Costillas de cerdo glaseadas en salsa BBQ, con maduro y papa al vapor.",
+          "precio": 42000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Picada Silver para dos",
+          "descripcion": "Res, cerdo, chorizo, chicharrón, papa criolla, arepa y guacamole. Ideal para compartir.",
+          "precio": 78000,
+          "ejemplo": true,
+          "destacado": true
+        },
+        {
+          "nombre": "Pechuga a la parrilla",
+          "descripcion": "Pechuga marinada en hierbas, con vegetales asados y arroz de la casa.",
+          "precio": 34000,
+          "ejemplo": true
+        }
+      ]
+    },
+    {
+      "id": "cocteles",
+      "nombre": "Cócteles",
+      "descripcion": "Preparados al momento, perfectos para brindar.",
+      "imagen": "imagenes/coctel-rosado.jpg",
+      "imagenAlt": "Cóctel rosado con romero y frutos rojos servido en copa",
+      "platos": [
+        {
+          "nombre": "Gin rosado de frutos rojos",
+          "descripcion": "Ginebra, frutos rojos, tónica y una ramita de romero.",
+          "precio": 32000,
+          "ejemplo": true,
+          "destacado": true
+        },
+        {
+          "nombre": "Luces verdes",
+          "descripcion": "Ron blanco, hierbabuena, limón y un toque de manzana verde.",
+          "precio": 30000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Margarita de maracuyá",
+          "descripcion": "Tequila, maracuyá fresco y borde de sal con ají.",
+          "precio": 29000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Aperol spritz",
+          "descripcion": "Aperol, vino espumoso, soda y rodaja de naranja.",
+          "precio": 30000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Mojito clásico",
+          "descripcion": "Ron, hierbabuena, limón y soda.",
+          "precio": 26000,
+          "ejemplo": true
+        }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "nombre": "Bebidas",
+      "descripcion": "Cervezas, vinos y bebidas sin alcohol.",
+      "imagen": "imagenes/barra-grifo-cerveza.jpg",
+      "imagenAlt": "Grifo de cerveza en la barra con luces desenfocadas al fondo",
+      "platos": [
+        {
+          "nombre": "Cerveza nacional",
+          "descripcion": "Bien fría, en botella.",
+          "precio": 8000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Cerveza artesanal",
+          "descripcion": "Pregunta por las referencias disponibles.",
+          "precio": 14000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Copa de vino tinto",
+          "descripcion": "Vino de la casa.",
+          "precio": 22000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Limonada de coco",
+          "descripcion": "Cremosa y refrescante.",
+          "precio": 12000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Jugo natural",
+          "descripcion": "En agua o en leche, según la fruta del día.",
+          "precio": 9000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Gaseosa o agua",
+          "descripcion": "Personal.",
+          "precio": 5000,
+          "ejemplo": true
+        }
+      ]
+    },
+    {
+      "id": "entradas",
+      "nombre": "Entradas",
+      "descripcion": "Para picar mientras llega la parrilla.",
+      "imagen": "imagenes/cocina-abierta.jpg",
+      "imagenAlt": "Cocina abierta con fachada de ladrillo y jardín iluminado en verde",
+      "platos": [
+        {
+          "nombre": "Chorizo santarrosano",
+          "descripcion": "Con arepa asada y limón.",
+          "precio": 15000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Empanadas de carne (4 und.)",
+          "descripcion": "Crocantes, con ají de la casa.",
+          "precio": 16000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Patacones con hogao",
+          "descripcion": "Patacones crocantes con hogao y guacamole.",
+          "precio": 18000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Chicharrón con arepa",
+          "descripcion": "Chicharrón carnudo, arepa y limón.",
+          "precio": 22000,
+          "ejemplo": true
+        },
+        {
+          "nombre": "Nachos Silver",
+          "descripcion": "Con queso fundido, carne desmechada, pico de gallo y guacamole.",
+          "precio": 26000,
+          "ejemplo": true
+        }
+      ]
+    }
+  ]
+}
