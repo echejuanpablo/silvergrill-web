@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- PROPUESTA: quitar esta línea cuando el dueño apruebe la página (ver README). -->
+  <meta name="robots" content="noindex">
+
+  <title>Silver Grill &amp; Bar | Parrilla y cócteles en Pereira</title>
+  <meta name="description" content="Restaurante bar de parrilla y cócteles en Pereira, vía a Cerritos. Terraza con plantas y luces verdes, ideal para una cita o una salida especial. Reserva tu mesa por WhatsApp.">
+  <meta name="theme-color" content="#090d0b">
+  <link rel="canonical" href="https://echejuanpablo.github.io/silvergrill-web/">
+
+  <!-- Vista previa al compartir (WhatsApp, Instagram, Facebook) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="Silver Grill &amp; Bar">
+  <meta property="og:title" content="Silver Grill &amp; Bar · Parrilla y cócteles en Pereira">
+  <meta property="og:description" content="Fuego, cócteles y luces verdes: el plan perfecto para tu próxima cita. Reserva por WhatsApp.">
+  <meta property="og:url" content="https://echejuanpablo.github.io/silvergrill-web/">
+  <meta property="og:image" content="https://echejuanpablo.github.io/silvergrill-web/imagenes/compartir.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo de Silver Grill &amp; Bar sobre fotos de la terraza y un cóctel">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32.png">
+  <link rel="apple-touch-icon" href="imagenes/logo-silver.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- Datos estructurados para Google (SEO local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "@id": "https://echejuanpablo.github.io/silvergrill-web/#restaurante",
+    "name": "Silver Grill & Bar",
+    "description": "Restaurante bar de parrilla y cócteles dentro de un mall de comidas en Pereira, con terraza, vegetación y luces verdes. Ideal para citas y salidas especiales.",
+    "url": "https://echejuanpablo.github.io/silvergrill-web/",
+    "telephone": "+57 317 511 2492",
+    "image": [
+      "https://echejuanpablo.github.io/silvergrill-web/imagenes/ambiente-noche-luces-verdes.jpg",
+      "https://echejuanpablo.github.io/silvergrill-web/imagenes/coctel-rosado.jpg",
+      "https://echejuanpablo.github.io/silvergrill-web/imagenes/plato-carne-coctel.jpg"
+    ],
+    "logo": "https://echejuanpablo.github.io/silvergrill-web/imagenes/logo-silver.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. 30 de Agosto, kilómetro 5, entrada 17",
+      "addressLocality": "Pereira",
+      "addressRegion": "Risaralda",
+      "addressCountry": "CO"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 4.81056,
+      "longitude": -75.77019
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=4.8105625%2C-75.7701875",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Sunday"],
+        "opens": "12:00",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "12:00",
+        "closes": "23:30"
+      }
+    ],
+    "servesCuisine": ["Parrilla", "Carnes a la brasa", "Cócteles"],
+    "acceptsReservations": "https://wa.me/573175112492",
+    "hasMenu": "https://echejuanpablo.github.io/silvergrill-web/#menu",
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Consumo en el local", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Para llevar (retiro en puerta)", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Domicilios", "value": false }
+    ],
+    "sameAs": ["https://www.instagram.com/silvergrillybar/"]
+  }
+  </script>
+
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Íconos reutilizables -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.88 9.89m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/></g><circle cx="17.4" cy="6.6" r="1.15" fill="currentColor"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+    <symbol id="i-reloj" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></g></symbol>
+    <symbol id="i-fuego" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 22c4 0 7-2.8 7-6.8 0-3.3-2-5.6-3.6-7.3-.4 2-1.4 3.2-2.6 3.6.6-3.3-.6-6.4-3.4-8.5.1 3.4-1.7 5.4-3.3 7.4C5 12 5 13.4 5 15.2 5 19.2 8 22 12 22zm0 0c-1.7 0-3-1.3-3-3 0-1.9 1.6-2.9 2.2-4.6 1.6 1 3.8 2.6 3.8 4.6 0 1.7-1.3 3-3 3z"/></symbol>
+    <symbol id="i-copa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14l-7 8.5L5 4z"/><path d="M12 12.5V20M8 20h8M7.3 6.8h9.4"/></g></symbol>
+    <symbol id="i-hoja" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19C5 10 10.5 4.5 20 4c-.3 9.6-5.8 15-15 15z"/><path d="M5 19c3-4.2 6.2-7.3 10-9.5"/></g></symbol>
+    <symbol id="i-corazon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 20s-7.5-4.6-7.5-10.1A4.4 4.4 0 0 1 12 7.3a4.4 4.4 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></symbol>
+    <symbol id="i-luna" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+    <symbol id="i-bolsa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></g></symbol>
+    <symbol id="i-mesa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18M6 9v11M18 9v11M8 9V5h8v4"/></g></symbol>
+    <symbol id="i-no" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></g></symbol>
+    <symbol id="i-flecha-izq" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-flecha-der" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-cerrar" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </svg>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== Encabezado ===== -->
+  <header class="encabezado" data-encabezado>
+    <div class="contenedor encabezado__inner">
+      <a class="marca" href="#inicio" aria-label="Silver Grill &amp; Bar, ir al inicio">
+        <img class="marca__logo" src="imagenes/logo-silver.png" alt="" width="44" height="44">
+        <span class="marca__texto">Silver <span>Grill &amp; Bar</span></span>
+      </a>
+
+      <nav class="nav" id="nav-principal" aria-label="Secciones" data-nav>
+        <ul class="nav__lista">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#cita">Tu cita</a></li>
+          <li><a href="#horario">Horario y ubicación</a></li>
+        </ul>
+      </nav>
+
+      <div class="encabezado__acciones">
+        <a class="boton boton--primario boton--compacto" href="https://wa.me/573175112492?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Silver%20Grill%20%26%20Bar" target="_blank" rel="noopener">
+          <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          <span>Reservar</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principal" data-nav-toggle>
+          <svg class="icono" aria-hidden="true"><use href="#i-menu"/></svg>
+          <span class="sr-only">Abrir menú de secciones</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ===== 1. Portada ===== -->
+    <section class="portada" id="inicio" aria-labelledby="titulo-portada">
+      <div class="contenedor portada__inner">
+        <div class="portada__texto">
+          <p class="antetitulo">Parrilla &amp; coctelería · Pereira</p>
+          <h1 class="portada__titulo" id="titulo-portada">
+            <span class="texto-plata">Silver</span>
+            <span class="portada__subtitulo">Grill &amp; Bar</span>
+          </h1>
+          <p class="portada__frase">Fuego, cócteles y luces verdes: el plan perfecto para tu próxima cita.</p>
+          <div class="portada__acciones">
+            <a class="boton boton--primario" href="https://wa.me/573175112492?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Silver%20Grill%20%26%20Bar" target="_blank" rel="noopener">
+              <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Reservar por WhatsApp
+            </a>
+            <a class="boton boton--secundario" href="#menu">Ver el menú</a>
+          </div>
+          <p class="portada__estado" data-estado-horario>
+            <svg class="icono" aria-hidden="true"><use href="#i-reloj"/></svg>
+            <span>Martes a domingo desde las 12:00&nbsp;m.</span>
+          </p>
+        </div>
+
+        <div class="portada__visual">
+          <div class="portada__foto">
+            <img src="imagenes/ambiente-noche-luces-verdes.jpg" width="347" height="463" fetchpriority="high"
+                 alt="Terraza de noche iluminada con luces verdes, plantas y una pareja conversando en su mesa">
+          </div>
+          <img class="portada__flotante portada__flotante--a" src="imagenes/coctel-rosado.jpg" width="347" height="420" loading="lazy"
+               alt="Cóctel rosado con romero y frutos rojos servido en copa">
+          <img class="portada__flotante portada__flotante--b" src="imagenes/plato-carne-coctel.jpg" width="346" height="419" loading="lazy"
+               alt="Plato de carne a la parrilla con arroz y maduro, acompañado de un cóctel">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. Sobre nosotros ===== -->
+    <section class="seccion nosotros" id="nosotros" aria-labelledby="titulo-nosotros">
+      <div class="contenedor nosotros__inner">
+        <div class="nosotros__texto revelar">
+          <p class="antetitulo">Sobre nosotros</p>
+          <h2 class="titulo-seccion" id="titulo-nosotros">Un rincón verde para compartir sin afán</h2>
+          <p>En Silver Grill &amp; Bar la noche gira alrededor de la parrilla. Cortes a las brasas, cócteles preparados al momento y una terraza rodeada de plantas, madera y luces verdes que invitan a quedarse un rato más.</p>
+          <p>Estamos dentro de un mall de comidas sobre la Av. 30 de Agosto, camino a Cerritos: fácil de llegar y con el ambiente tranquilo que pide una buena conversación.</p>
+
+          <ul class="pilares">
+            <li class="pilar">
+              <svg class="pilar__icono" aria-hidden="true"><use href="#i-fuego"/></svg>
+              <div>
+                <h3>Parrilla</h3>
+                <p>Carnes y cortes a las brasas, con acompañantes para compartir.</p>
+              </div>
+            </li>
+            <li class="pilar">
+              <svg class="pilar__icono" aria-hidden="true"><use href="#i-copa"/></svg>
+              <div>
+                <h3>Cócteles</h3>
+                <p>Coctelería vistosa, preparada al momento en nuestra barra.</p>
+              </div>
+            </li>
+            <li class="pilar">
+              <svg class="pilar__icono" aria-hidden="true"><use href="#i-hoja"/></svg>
+              <div>
+                <h3>Ambiente</h3>
+                <p>Jardín, vegetación y luces verdes para una noche diferente.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nosotros__fotos revelar">
+          <img class="nosotros__foto-principal" src="imagenes/barra-noche-lamparas.jpg" width="347" height="463" loading="lazy"
+               alt="Barra iluminada con estantes de licores, lámparas de mimbre y sillas tejidas">
+          <img class="nosotros__foto-secundaria" src="imagenes/letrero-neon-silver.jpg" width="347" height="342" loading="lazy"
+               alt="Letrero en neón de Silver Grill &amp; Bar junto a una pared de botellas de vino">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. Menú ===== -->
+    <section class="seccion menu" id="menu" aria-labelledby="titulo-menu">
+      <div class="contenedor">
+        <header class="cabecera-seccion revelar">
+          <p class="antetitulo">La carta</p>
+          <h2 class="titulo-seccion" id="titulo-menu">Nuestro menú</h2>
+          <p class="cabecera-seccion__bajada">De la parrilla a la barra: todo pensado para compartir.</p>
+        </header>
+
+        <p class="menu__aviso" data-menu-aviso hidden></p>
+
+        <!-- El contenido se carga desde menu.json -->
+        <div class="menu__app" data-menu>
+          <p class="menu__cargando">Cargando el menú…</p>
+        </div>
+
+        <p class="menu__servicio">
+          <svg class="icono" aria-hidden="true"><use href="#i-bolsa"/></svg>
+          Consumo en el local y para llevar (retiro en puerta). No hacemos domicilios.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 4. Galería ===== -->
+    <section class="seccion galeria" id="galeria" aria-labelledby="titulo-galeria">
+      <div class="contenedor">
+        <header class="cabecera-seccion revelar">
+          <p class="antetitulo">Galería</p>
+          <h2 class="titulo-seccion" id="titulo-galeria">Así se vive Silver</h2>
+          <p class="cabecera-seccion__bajada">Toca una foto para verla en grande.</p>
+        </header>
+
+        <ul class="galeria__grilla" data-galeria>
+          <li class="galeria__item galeria__item--alto">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/ambiente-noche-luces-verdes.jpg" width="347" height="463" loading="lazy"
+                   alt="Terraza de noche iluminada con luces verdes, plantas y una pareja conversando en su mesa">
+            </button>
+          </li>
+          <li class="galeria__item">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/coctel-rosado.jpg" width="347" height="420" loading="lazy"
+                   alt="Cóctel rosado con romero y frutos rojos servido en copa de Silver Grill &amp; Bar">
+            </button>
+          </li>
+          <li class="galeria__item">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/jardin-noche.jpg" width="347" height="342" loading="lazy"
+                   alt="Jardín de noche con un gran árbol, lámparas tejidas y plantas iluminadas en verde">
+            </button>
+          </li>
+          <li class="galeria__item galeria__item--alto">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/barra-noche-lamparas.jpg" width="347" height="463" loading="lazy"
+                   alt="Barra iluminada con estantes de licores, lámparas de mimbre y sillas tejidas">
+            </button>
+          </li>
+          <li class="galeria__item">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/plato-carne-coctel.jpg" width="346" height="419" loading="lazy"
+                   alt="Plato de carne a la parrilla con arroz y maduro, acompañado de un cóctel de maracuyá y una botella de vino">
+            </button>
+          </li>
+          <li class="galeria__item">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/letrero-neon-silver.jpg" width="347" height="342" loading="lazy"
+                   alt="Letrero en neón de Silver Grill &amp; Bar junto a una pared de botellas de vino">
+            </button>
+          </li>
+          <li class="galeria__item galeria__item--alto">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/pareja-jardin.jpg" width="347" height="454" loading="lazy"
+                   alt="Pareja sentada en un sofá de mimbre en la terraza, rodeada de vegetación">
+            </button>
+          </li>
+          <li class="galeria__item">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/carne-parrilla.jpg" width="347" height="302" loading="lazy"
+                   alt="Cortes de carne dorándose sobre la parrilla">
+            </button>
+          </li>
+          <li class="galeria__item">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/terraza-plantas.jpg" width="347" height="454" loading="lazy"
+                   alt="Personas compartiendo en la terraza entre plantas y lámparas colgantes">
+            </button>
+          </li>
+          <li class="galeria__item galeria__item--ancho">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/interior-cortinas.jpg" width="446" height="182" loading="lazy"
+                   alt="Salón interior con cortinas de terciopelo verde y ventanales hacia el jardín">
+            </button>
+          </li>
+          <li class="galeria__item galeria__item--alto">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/barra-sillas-mimbre.jpg" width="347" height="463" loading="lazy"
+                   alt="Sillas de mimbre frente a la barra con luces cálidas al fondo">
+            </button>
+          </li>
+          <li class="galeria__item">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/neon-y-nos-vamos.jpg" width="346" height="342" loading="lazy"
+                   alt="Letrero en neón con la frase «Y nos vamos» sobre una pared de follaje">
+            </button>
+          </li>
+          <li class="galeria__item galeria__item--alto">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/terraza-noche.jpg" width="347" height="463" loading="lazy"
+                   alt="Terraza llena de clientes por la noche bajo lámparas y luces colgantes">
+            </button>
+          </li>
+          <li class="galeria__item galeria__item--alto">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/jardin-atardecer.jpg" width="346" height="463" loading="lazy"
+                   alt="Sendero del jardín al atardecer con la barra iluminada al fondo">
+            </button>
+          </li>
+          <li class="galeria__item">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/cocina-abierta.jpg" width="347" height="463" loading="lazy"
+                   alt="Cocina abierta con fachada de ladrillo y jardín iluminado en verde">
+            </button>
+          </li>
+          <li class="galeria__item">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/terraza-bar-atardecer.jpg" width="346" height="454" loading="lazy"
+                   alt="Barra exterior de la terraza al atardecer, entre plantas y luces">
+            </button>
+          </li>
+          <li class="galeria__item">
+            <button type="button" class="galeria__boton">
+              <img src="imagenes/barra-grifo-cerveza.jpg" width="346" height="463" loading="lazy"
+                   alt="Grifo de cerveza en la barra con luces desenfocadas al fondo">
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Vista ampliada -->
+      <dialog class="visor" aria-label="Foto ampliada" data-visor>
+        <figure class="visor__figura">
+          <img class="visor__imagen" src="" alt="" data-visor-imagen>
+          <figcaption class="visor__pie">
+            <span data-visor-texto></span>
+            <span class="visor__contador" data-visor-contador></span>
+          </figcaption>
+        </figure>
+        <button class="visor__boton visor__boton--cerrar" type="button" data-visor-cerrar>
+          <svg class="icono" aria-hidden="true"><use href="#i-cerrar"/></svg>
+          <span class="sr-only">Cerrar</span>
+        </button>
+        <button class="visor__boton visor__boton--anterior" type="button" data-visor-anterior>
+          <svg class="icono" aria-hidden="true"><use href="#i-flecha-izq"/></svg>
+          <span class="sr-only">Foto anterior</span>
+        </button>
+        <button class="visor__boton visor__boton--siguiente" type="button" data-visor-siguiente>
+          <svg class="icono" aria-hidden="true"><use href="#i-flecha-der"/></svg>
+          <span class="sr-only">Foto siguiente</span>
+        </button>
+      </dialog>
+    </section>
+
+    <!-- ===== 5. Ideal para tu cita ===== -->
+    <section class="seccion cita" id="cita" aria-labelledby="titulo-cita">
+      <div class="contenedor cita__inner">
+        <div class="cita__fotos revelar">
+          <img class="cita__foto-principal" src="imagenes/pareja-jardin.jpg" width="347" height="454" loading="lazy"
+               alt="Pareja sentada en un sofá de mimbre en la terraza, rodeada de vegetación">
+          <img class="cita__foto-neon" src="imagenes/neon-y-nos-vamos.jpg" width="346" height="342" loading="lazy"
+               alt="Letrero en neón con la frase «Y nos vamos»">
+        </div>
+
+        <div class="cita__texto revelar">
+          <p class="antetitulo">Para dos</p>
+          <h2 class="titulo-seccion" id="titulo-cita">Ideal para tu cita</h2>
+          <p class="cita__bajada">Primera salida, aniversario o simplemente ganas de consentirse: aquí la noche se da sola.</p>
+
+          <ul class="razones">
+            <li class="razon">
+              <svg class="razon__icono" aria-hidden="true"><use href="#i-hoja"/></svg>
+              <h3>Rincones entre plantas</h3>
+              <p>Mesas en la terraza y el jardín, rodeadas de vegetación y luz suave.</p>
+            </li>
+            <li class="razon">
+              <svg class="razon__icono" aria-hidden="true"><use href="#i-copa"/></svg>
+              <h3>Cócteles para brindar</h3>
+              <p>Coctelería vistosa, perfecta para el brindis y para la foto.</p>
+            </li>
+            <li class="razon">
+              <svg class="razon__icono" aria-hidden="true"><use href="#i-fuego"/></svg>
+              <h3>Parrilla para compartir</h3>
+              <p>Cortes a las brasas y entradas para picar entre los dos.</p>
+            </li>
+            <li class="razon">
+              <svg class="razon__icono" aria-hidden="true"><use href="#i-luna"/></svg>
+              <h3>Sin afán</h3>
+              <p>Los viernes y sábados abrimos hasta las 11:30&nbsp;p.m.</p>
+            </li>
+          </ul>
+
+          <div class="pasos">
+            <h3 class="pasos__titulo">Reserva en tres pasos</h3>
+            <ol class="pasos__lista">
+              <li><span class="pasos__numero" aria-hidden="true">1</span> Escríbenos por WhatsApp.</li>
+              <li><span class="pasos__numero" aria-hidden="true">2</span> Cuéntanos el día, la hora y cuántas personas vienen.</li>
+              <li><span class="pasos__numero" aria-hidden="true">3</span> Te confirmamos tu mesa.</li>
+            </ol>
+            <p class="pasos__nota">
+              <svg class="icono" aria-hidden="true"><use href="#i-corazon"/></svg>
+              ¿Celebran algo especial? Cuéntanoslo al reservar.
+            </p>
+            <a class="boton boton--primario" href="https://wa.me/573175112492?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Silver%20Grill%20%26%20Bar" target="_blank" rel="noopener">
+              <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Reservar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. Horario y ubicación ===== -->
+    <section class="seccion visita" id="horario" aria-labelledby="titulo-horario">
+      <div class="contenedor">
+        <header class="cabecera-seccion revelar">
+          <p class="antetitulo">Visítanos</p>
+          <h2 class="titulo-seccion" id="titulo-horario">Horario y ubicación</h2>
+        </header>
+
+        <div class="visita__grilla">
+          <article class="tarjeta horario revelar" aria-labelledby="titulo-tarjeta-horario">
+            <h3 class="tarjeta__titulo" id="titulo-tarjeta-horario">
+              <svg class="icono" aria-hidden="true"><use href="#i-reloj"/></svg>
+              Horario
+            </h3>
+            <p class="estado" data-estado-horario-detalle hidden></p>
+
+            <!-- Horario: data-dia usa 0 = domingo … 6 = sábado. data-abre / data-cierra en formato 24 h. -->
+            <ul class="horario__lista" data-horario>
+              <li class="horario__dia" data-dia="1"><span>Lunes</span><span>Cerrado</span></li>
+              <li class="horario__dia" data-dia="2" data-abre="12:00" data-cierra="22:00"><span>Martes</span><span>12:00&nbsp;m. – 10:00&nbsp;p.m.</span></li>
+              <li class="horario__dia" data-dia="3" data-abre="12:00" data-cierra="22:00"><span>Miércoles</span><span>12:00&nbsp;m. – 10:00&nbsp;p.m.</span></li>
+              <li class="horario__dia" data-dia="4" data-abre="12:00" data-cierra="22:00"><span>Jueves</span><span>12:00&nbsp;m. – 10:00&nbsp;p.m.</span></li>
+              <li class="horario__dia" data-dia="5" data-abre="12:00" data-cierra="23:30"><span>Viernes</span><span>12:00&nbsp;m. – 11:30&nbsp;p.m.</span></li>
+              <li class="horario__dia" data-dia="6" data-abre="12:00" data-cierra="23:30"><span>Sábado</span><span>12:00&nbsp;m. – 11:30&nbsp;p.m.</span></li>
+              <li class="horario__dia" data-dia="0" data-abre="12:00" data-cierra="22:00"><span>Domingo</span><span>12:00&nbsp;m. – 10:00&nbsp;p.m.</span></li>
+            </ul>
+
+            <ul class="servicios" aria-label="Servicios">
+              <li><svg class="icono" aria-hidden="true"><use href="#i-mesa"/></svg> Consumo en el local</li>
+              <li><svg class="icono" aria-hidden="true"><use href="#i-bolsa"/></svg> Para llevar (retiro en puerta)</li>
+              <li class="servicios__no"><svg class="icono" aria-hidden="true"><use href="#i-no"/></svg> No hacemos domicilios</li>
+            </ul>
+          </article>
+
+          <article class="tarjeta ubicacion revelar" aria-labelledby="titulo-tarjeta-ubicacion">
+            <h3 class="tarjeta__titulo" id="titulo-tarjeta-ubicacion">
+              <svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>
+              Ubicación
+            </h3>
+            <address class="ubicacion__direccion">
+              Av. 30 de Agosto, kilómetro 5, entrada 17<br>
+              Dentro del mall de comidas · Pereira, Risaralda
+            </address>
+            <div class="ubicacion__mapa">
+              <iframe
+                src="https://www.google.com/maps?q=4.8105625,-75.7701875&amp;z=16&amp;hl=es&amp;output=embed"
+                title="Mapa de Google con la ubicación de Silver Grill &amp; Bar"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+            <div class="ubicacion__acciones">
+              <a class="boton boton--primario" href="https://www.google.com/maps/dir/?api=1&amp;destination=4.8105625%2C-75.7701875" target="_blank" rel="noopener">
+                <svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>
+                Cómo llegar
+              </a>
+              <a class="boton boton--secundario" href="https://www.instagram.com/silvergrillybar/" target="_blank" rel="noopener">
+                <svg class="icono" aria-hidden="true"><use href="#i-instagram"/></svg>
+                Ver Instagram
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 7. Pie de página ===== -->
+  <footer class="pie" id="contacto">
+    <div class="contenedor pie__inner">
+      <div class="pie__marca">
+        <img src="imagenes/logo-silver.png" alt="Silver Grill &amp; Bar" width="72" height="72" loading="lazy">
+        <p>Parrilla, cócteles y luces verdes en Pereira.</p>
+      </div>
+
+      <div class="pie__columna">
+        <h2 class="pie__titulo">Contacto</h2>
+        <ul class="pie__lista">
+          <li>
+            <a href="https://wa.me/573175112492?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Silver%20Grill%20%26%20Bar" target="_blank" rel="noopener">
+              <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              WhatsApp: +57 317 511 2492
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/silvergrillybar/" target="_blank" rel="noopener">
+              <svg class="icono" aria-hidden="true"><use href="#i-instagram"/></svg>
+              Instagram: @silvergrillybar
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pie__columna">
+        <h2 class="pie__titulo">Dirección</h2>
+        <ul class="pie__lista">
+          <li>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=4.8105625%2C-75.7701875" target="_blank" rel="noopener">
+              <svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>
+              Av. 30 de Agosto, km 5, entrada 17, Pereira, Risaralda
+            </a>
+          </li>
+          <li class="pie__texto">
+            <svg class="icono" aria-hidden="true"><use href="#i-reloj"/></svg>
+            Mar. a dom. desde las 12:00&nbsp;m. · Lunes cerrado
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contenedor pie__legal">
+      <p>© <span data-anio>2026</span> Silver Grill &amp; Bar · Pereira, Risaralda</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="whatsapp-flotante" href="https://wa.me/573175112492?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Silver%20Grill%20%26%20Bar" target="_blank" rel="noopener" aria-label="Reservar mesa por WhatsApp">
+    <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    <span aria-hidden="true">Reservar</span>
+  </a>
+</body>
+</html>
