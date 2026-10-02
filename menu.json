@@ -5,8 +5,8 @@
       "id": "parrilla",
       "nombre": "Parrilla",
       "descripcion": "Cortes y carnes a las brasas, para disfrutar sin afán.",
-      "imagen": "imagenes/carne-parrilla.jpg",
-      "imagenAlt": "Cortes de carne dorándose sobre la parrilla",
+      "imagen": "imagenes/plato-carne-papas.jpg",
+      "imagenAlt": "Corte de carne a la parrilla con papas a la francesa y ensalada",
       "platos": [
         {
           "nombre": "Punta de anca (300 g)",
@@ -46,8 +46,8 @@
       "id": "cocteles",
       "nombre": "Cócteles",
       "descripcion": "Preparados al momento, perfectos para brindar.",
-      "imagen": "imagenes/coctel-rosado.jpg",
-      "imagenAlt": "Cóctel rosado con romero y frutos rojos servido en copa",
+      "imagen": "imagenes/coctel-ginebra-frutos.jpg",
+      "imagenAlt": "Gin con fresas, arándanos, pepino y hierbabuena servido en copa",
       "platos": [
         {
           "nombre": "Gin rosado de frutos rojos",

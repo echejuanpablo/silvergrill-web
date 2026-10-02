@@ -372,24 +372,20 @@ button { font: inherit; color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 40%;
-}
-@media (max-width: 959px) {
-  /* La foto original es pequeña: un leve desenfoque evita que se vea pixelada como fondo */
-  .portada__foto { overflow: hidden; }
-  .portada__foto img { filter: blur(1px) saturate(1.1); transform: scale(1.04); }
+  object-position: 64% 50%;
 }
 .portada__foto::after {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(9, 13, 11, 0.7) 0%, rgba(9, 13, 11, 0.2) 20%, rgba(9, 13, 11, 0.62) 40%, rgba(9, 13, 11, 0.9) 62%, var(--fondo) 100%);
+    linear-gradient(180deg, rgba(9, 13, 11, 0.7) 0%, rgba(9, 13, 11, 0.3) 14%, rgba(9, 13, 11, 0.7) 34%, rgba(9, 13, 11, 0.92) 58%, var(--fondo) 100%);
 }
 
 .portada__flotante { display: none; }
 
 .portada__texto { max-width: 620px; }
+.portada .antetitulo { text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9); }
 
 .portada__titulo {
   font-family: var(--fuente-titulos);
@@ -484,6 +480,7 @@ button { font: inherit; color: inherit; }
     overflow: hidden;
     box-shadow: 0 0 0 1px var(--borde-fuerte), 0 0 0 10px rgba(255, 255, 255, 0.03), var(--sombra), 0 0 90px rgba(62, 224, 139, 0.18);
   }
+  .portada__foto img { object-position: 74% 50%; }
   .portada__foto::after {
     background: linear-gradient(180deg, transparent 60%, rgba(9, 13, 11, 0.45));
   }
@@ -663,7 +660,7 @@ button { font: inherit; color: inherit; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 20%, rgba(9, 13, 11, 0.92));
+  background: linear-gradient(180deg, rgba(9, 13, 11, 0) 15%, rgba(9, 13, 11, 0.6) 55%, rgba(9, 13, 11, 0.95) 100%);
 }
 .menu__portada-texto {
   position: relative;
@@ -671,6 +668,7 @@ button { font: inherit; color: inherit; }
   padding: 22px;
 }
 .menu__portada h3 {
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
   font-family: var(--fuente-titulos);
   font-size: 2.2rem;
   font-weight: 600;
@@ -781,6 +779,15 @@ button { font: inherit; color: inherit; }
 }
 .galeria__item--alto { grid-row: span 2; }
 .galeria__item--ancho { grid-column: span 2; }
+.galeria__item--grande { grid-column: span 2; grid-row: span 2; }
+.galeria__item[hidden] { display: none; }
+
+.galeria__mas {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+.galeria__mas .boton[hidden] { display: none; }
 
 .galeria__boton {
   position: relative;
@@ -813,8 +820,8 @@ button { font: inherit; color: inherit; }
 
 @media (min-width: 700px) {
   .galeria__grilla {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 170px;
     gap: 12px;
   }
 }
@@ -928,6 +935,7 @@ html.visor-abierto { overflow: hidden; }
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: 62% 50%;
   border-radius: 999px 999px var(--radio-grande) var(--radio-grande);
   box-shadow: 0 0 0 1px var(--borde-fuerte), var(--sombra);
 }
@@ -1102,6 +1110,7 @@ html.visor-abierto { overflow: hidden; }
   font-variant-numeric: tabular-nums;
 }
 .horario__dia + .horario__dia { border-top: 1px solid var(--borde); }
+.horario__dia > span:last-child { white-space: nowrap; }
 .horario__dia.es-hoy {
   border-radius: 12px;
   background: rgba(62, 224, 139, 0.1);

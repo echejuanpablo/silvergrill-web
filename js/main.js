@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var WHATSAPP_URL = 'https://wa.me/573175112492?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Silver%20Grill%20%26%20Bar';
+  var WHATSAPP_URL = 'https://wa.me/573104812911?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Silver%20Grill%20%26%20Bar';
   var DIAS = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
 
   document.documentElement.classList.add('js');
@@ -302,6 +302,19 @@
 
     texto.setAttribute('aria-hidden', 'true'); // el texto ya está en el alt de la imagen
 
+    // Muestra primero una selección; el resto aparece con "Ver todas las fotos"
+    var extras = Array.prototype.slice.call(document.querySelectorAll('[data-galeria] .galeria__item--extra'));
+    var botonMas = document.querySelector('[data-galeria-mas]');
+    if (botonMas && extras.length) {
+      extras.forEach(function (li) { li.hidden = true; });
+      botonMas.hidden = false;
+      botonMas.addEventListener('click', function () {
+        extras.forEach(function (li) { li.hidden = false; });
+        botonMas.hidden = true;
+        extras[0].querySelector('button').focus();
+      });
+    }
+
     botones.forEach(function (boton, i) {
       var img = boton.querySelector('img');
       boton.setAttribute('aria-label', 'Ampliar foto: ' + img.alt);
@@ -340,7 +353,9 @@
 
     visor.addEventListener('close', function () {
       document.documentElement.classList.remove('visor-abierto');
-      botones[indice].focus();
+      // Si la foto quedó oculta tras "Ver todas las fotos", el foco vuelve a ese botón
+      if (botones[indice].closest('li').hidden && botonMas) botonMas.focus();
+      else botones[indice].focus();
     });
 
     visor.querySelector('[data-visor-cerrar]').addEventListener('click', cerrar);

@@ -28,7 +28,7 @@ Luego entra a <http://localhost:8000> en el navegador. En GitHub Pages funciona 
 
 ## Publicar en GitHub Pages (gratis)
 
-1. Une esta rama con `main` (o usa directamente la rama donde está la página).
+1. La página está en la rama `main`.
 2. En GitHub, entra al repositorio → **Settings** → **Pages**.
 3. En **Build and deployment** elige **Source: Deploy from a branch**.
 4. En **Branch** elige `main` y la carpeta `/ (root)`. Pulsa **Save**.
@@ -95,21 +95,46 @@ El horario aparece en varios sitios de `index.html`; si cambia, actualízalos to
 
 ## Fotos
 
-Las fotos se recortaron de capturas de pantalla de Instagram y Google Maps, sin incluir partes de la interfaz de esas aplicaciones. Por eso **todas son de baja resolución** (unos 350 px de ancho). Sirven para la muestra, pero en un celular moderno o en computador se ven algo borrosas.
+Todas las fotos se recortaron de capturas de pantalla (Instagram, Google Maps y fotos del celular), sin incluir partes de la interfaz de esas aplicaciones.
+
+- **Fotos nuevas (2 de octubre)**: de 540 a 1.125 px de ancho. Se ven bien en celular y aceptables en computador.
+- **Fotos de la primera tanda**: unos 350 px de ancho. Sirven para la muestra, pero se ven algo borrosas en pantallas grandes.
+
+La galería muestra primero 12 fotos y el resto aparece con el botón **"Ver todas las fotos"**. Para cambiar cuáles se ven primero, mueve los `<li>` dentro de `<ul class="galeria__grilla">` en `index.html`: las que tienen la clase `galeria__item--extra` quedan detrás del botón.
+
+### Fotos nuevas
 
 | Archivo | Tamaño | Dónde se usa | Estado |
 | --- | --- | --- | --- |
-| `ambiente-noche-luces-verdes.jpg` | 347×463 | Portada, galería | ⚠️ Pedir foto original al dueño (es la más importante) |
-| `coctel-rosado.jpg` | 347×420 | Portada, menú (Cócteles), galería | ⚠️ Pedir foto original al dueño |
-| `plato-carne-coctel.jpg` | 346×419 | Portada, galería | ⚠️ Pedir foto original al dueño |
+| `parrilla-noche-neon.jpg` | 979×802 | **Portada**, galería (foto grande) | Buena calidad |
+| `mesa-para-dos-barra.jpg` | 741×713 | **Ideal para tu cita**, galería | Buena calidad |
+| `plato-carne-papas.jpg` | 709×875 | Portada (computador), menú (Parrilla), galería | Buena calidad |
+| `coctel-ginebra-frutos.jpg` | 543×772 | Portada (computador), menú (Cócteles), galería | Buena calidad |
+| `terraza-dia-barra.jpg` | 1125×604 | Galería | Buena calidad |
+| `barra-neon-lamparas.jpg` | 727×676 | Galería | Buena calidad (el letrero dice "Silver Soda & Bar") |
+| `amigos-terraza-noche.jpg` | 791×686 | Galería | Buena calidad (clientes reconocibles: ver permisos) |
+| `coctel-frutos-rojos.jpg` | 714×699 | Galería | Buena calidad |
+| `coctel-ginebra-fresa.jpg` | 740×668 | Galería | Buena calidad |
+| `terraza-noche-lamparas.jpg` | 742×741 | Galería | Aceptable (foto oscura) |
+| `malteada-chocolate.jpg` | 732×682 | Galería | Buena calidad (el vaso dice "Silver Soda & Bar") |
+
+Capturas que **no** se usaron: el afiche "Bienvenidos · Plazuela Castilla" (es un diseño con texto, no una foto), una foto de tres personas posando frente a la barra y una de dos DJ posando. Las tres capturas que terminaban en "- copia" eran duplicados exactos.
+
+### Fotos de la primera tanda
+
+| Archivo | Tamaño | Dónde se usa | Estado |
+| --- | --- | --- | --- |
+| `ambiente-noche-luces-verdes.jpg` | 347×463 | Galería | ⚠️ Pedir foto original al dueño |
+| `pareja-jardin.jpg` | 347×454 | Galería | ⚠️ Pedir foto original al dueño |
 | `barra-noche-lamparas.jpg` | 347×463 | Sobre nosotros, galería | ⚠️ Pedir foto original al dueño |
 | `letrero-neon-silver.jpg` | 347×342 | Sobre nosotros, galería | ⚠️ Pedir foto original al dueño |
-| `pareja-jardin.jpg` | 347×454 | Ideal para tu cita, galería | ⚠️ Pedir foto original al dueño |
-| `neon-y-nos-vamos.jpg` | 346×342 | Ideal para tu cita, galería | ⚠️ Pedir foto original al dueño |
-| `carne-parrilla.jpg` | 347×302 | Menú (Parrilla), galería | ⚠️ Pedir foto original al dueño (recortada para quitar un botón de Instagram) |
+| `neon-y-nos-vamos.jpg` | 346×342 | Ideal para tu cita (círculo), galería | ⚠️ Pedir foto original al dueño |
+| `coctel-rosado.jpg` | 347×420 | Galería | ⚠️ Pedir foto original al dueño |
+| `plato-carne-coctel.jpg` | 346×419 | Galería | ⚠️ Pedir foto original al dueño |
+| `carne-parrilla.jpg` | 347×302 | Galería | ⚠️ Pedir foto original al dueño |
 | `barra-grifo-cerveza.jpg` | 346×463 | Menú (Bebidas), galería | ⚠️ Pedir foto original al dueño |
 | `cocina-abierta.jpg` | 347×463 | Menú (Entradas), galería | ⚠️ Pedir foto original al dueño |
-| `interior-cortinas.jpg` | 446×182 | Galería | ⚠️ Pedir foto original al dueño (la de peor calidad: viene de la ficha de Google Maps) |
+| `interior-cortinas.jpg` | 446×182 | Galería | ⚠️ Pedir foto original al dueño (la de peor calidad: viene de una ficha de Google Maps) |
 | `jardin-noche.jpg` | 347×342 | Galería | ⚠️ Pedir foto original al dueño |
 | `barra-sillas-mimbre.jpg` | 347×463 | Galería | ⚠️ Pedir foto original al dueño |
 | `terraza-noche.jpg` | 347×463 | Galería | ⚠️ Pedir foto original al dueño |
@@ -117,25 +142,25 @@ Las fotos se recortaron de capturas de pantalla de Instagram y Google Maps, sin 
 | `terraza-bar-atardecer.jpg` | 346×454 | Galería | ⚠️ Pedir foto original al dueño |
 | `jardin-atardecer.jpg` | 346×463 | Galería | ⚠️ Pedir foto original al dueño |
 | `logo-silver.png` | 192×192 | Encabezado, pie, ícono | ⚠️ Pedir el logo original (ideal en vector: SVG, AI o PDF) |
-| `compartir.jpg` | 1200×630 | Vista previa al compartir el enlace en WhatsApp o redes | Hecha con las fotos de arriba; rehacerla con las originales |
+| `compartir.jpg` | 1200×630 | Vista previa al compartir el enlace en WhatsApp o redes | Hecha con fotos nuevas y el logo |
 | `favicon-32.png` | 32×32 | Ícono de la pestaña del navegador | Sale del logo |
 
 Para cambiar una foto, reemplaza el archivo en `imagenes/` **con el mismo nombre** y la página la toma sola. Si la foto nueva es más grande, mejor: la página la ajusta. Conviene que pese menos de 300 KB (puedes comprimirla en <https://squoosh.app>). Si cambias el tamaño o la proporción, actualiza también `width` y `height` de esa imagen en `index.html`.
 
 ## Datos pendientes por confirmar con el dueño
 
-- [ ] **Menú real**: platos, descripciones y precios. Hoy todo el menú es de ejemplo y está marcado así.
-- [ ] **Fotos originales** en buena resolución, sobre todo la de portada (ver tabla de arriba), y el **logo** en alta calidad.
-- [ ] **Permiso de imagen**: varias fotos muestran clientes que se pueden reconocer (por ejemplo `pareja-jardin.jpg`, `terraza-noche.jpg`). Confirmar que el negocio puede usarlas en su página o cambiarlas.
-- [ ] **Nombre en Google Maps**: la ficha con el mismo teléfono aparece como **"LA ESTACION SILVER"** (3,8 ★, 20 opiniones). Confirmar si es la misma y, si es así, sugerir cambiarle el nombre a "Silver Grill & Bar" en el Perfil de Empresa de Google.
-- [ ] **Ubicación del mapa**: se usó el código de la ficha de Google (Plus Code `R66H+6W Pereira`, coordenadas 4.81056, -75.77019). Confirmar que el pin cae en la entrada correcta.
+- [ ] **Menú real**: platos, descripciones y precios. Ninguna captura mostró la carta, así que todo el menú sigue siendo de ejemplo y está marcado así.
+- [ ] **"Silver Grill & Bar" o "Silver Soda & Bar"**: varias fotos nuevas (letrero de neón, vaso, posavasos con @silversodaybar) y el afiche de bienvenida dicen **"Silver Soda & Bar"**. Confirmar si son dos marcas del mismo dueño en el mismo lugar, y si deben aparecer juntas en la página.
+- [ ] **Nombre del lugar**: la dirección se puso como "Kilómetro 7 vía Cerritos, Castilla Plaza", como la dio el cliente, pero el afiche de bienvenida dice **"Plazuela Castilla"**. Confirmar el nombre exacto.
+- [ ] **Mapa**: como no hay coordenadas exactas, el mapa y el botón "Cómo llegar" buscan la dirección "Castilla Plaza, Km 7 Vía Cerritos, Pereira, Risaralda" en Google Maps. Abrirlos una vez y confirmar que el pin cae en el lugar correcto. Si no, buscar el local en Google Maps, copiar sus coordenadas y ponerlas en `index.html` (mapa, "Cómo llegar", pie de página y `hasMap`).
+- [ ] **Fotos originales** de la primera tanda (ver tabla) y el **logo** en alta calidad.
+- [ ] **Permiso de imagen**: varias fotos muestran clientes que se pueden reconocer (por ejemplo `amigos-terraza-noche.jpg`, `pareja-jardin.jpg`, `terraza-noche.jpg`). Confirmar que el negocio puede usarlas en su página o cambiarlas.
+- [ ] **Ficha de Google Maps**: la ficha "LA ESTACION SILVER" que se vio antes tiene otra dirección (Av. 30 de Agosto, km 5) y otro teléfono (317 511 2492). Confirmar si el negocio tiene ficha propia en Castilla Plaza o crearla en el Perfil de Empresa de Google, con el nombre, la dirección y el teléfono nuevos.
 - [ ] **Horario**: la biografía de Instagram dice "Lunes a Domingo desde las 12pm", pero el horario que nos dieron indica **lunes cerrado**. Confirmar cuál es el correcto y actualizar Instagram para que coincida.
-- [ ] **WhatsApp**: confirmar que el +57 317 511 2492 tiene WhatsApp activo y que alguien responde las reservas (ideal con WhatsApp Business y un mensaje de bienvenida).
-- [ ] **Nombre del mall de comidas** donde está el local, para mencionarlo en la dirección. Confirmar también la frase "camino a Cerritos" de la sección *Sobre nosotros*.
+- [ ] **WhatsApp**: confirmar que el +57 310 481 2911 tiene WhatsApp activo y que alguien responde las reservas (ideal con WhatsApp Business y un mensaje de bienvenida).
 - [ ] **Celebraciones**: la página dice "¿Celebran algo especial? Cuéntanoslo al reservar". Confirmar si ofrecen algo para fechas especiales (decoración, postre, mesa preferencial) para mencionarlo, o ajustar la frase.
-- [ ] **Letrero "Silver Soda & Bar"**: aparece en una foto de Instagram (no se usó en la página). Confirmar si es otra marca o un nombre anterior.
 - [ ] **Rango de precios** (por ejemplo "$$"), para agregarlo a los datos de Google (`priceRange`).
-- [ ] **Otros datos opcionales**: medios de pago, parqueadero, si admiten mascotas, partidos en vivo y música/DJ (Instagram los menciona; no se incluyeron para mantener el enfoque en citas).
+- [ ] **Otros datos opcionales**: medios de pago, parqueadero, si admiten mascotas, partidos en vivo y música/DJ (Instagram y el letrero "Amigos, Música & Parrilla" los mencionan; no se destacaron para mantener el enfoque en citas).
 - [ ] **Dominio propio** (opcional), si el dueño quiere una dirección como `silvergrillbar.com` en vez de la de GitHub.
 
 ## Lista final antes de lanzar
@@ -149,7 +174,7 @@ Para cambiar una foto, reemplaza el archivo en `imagenes/` **con el mismo nombre
 
 ## Notas técnicas
 
-- **SEO local**: título y descripción, vista previa para redes (Open Graph) y datos estructurados `Restaurant` de schema.org con dirección, coordenadas, horario, teléfono e Instagram.
+- **SEO local**: título y descripción, vista previa para redes (Open Graph) y datos estructurados `Restaurant` de schema.org con dirección, horario, teléfono e Instagram.
 - **Mapa**: inserción de Google Maps sin clave de API. El botón "Cómo llegar" abre la ruta en Google Maps (o en la app, desde el celular).
 - **Abierto/cerrado ahora**: se calcula con la hora de Colombia (UTC−5), sin importar la zona horaria del teléfono del visitante.
 - **Accesibilidad**: textos alternativos en todas las fotos, contraste alto, botones de al menos 44 px, navegación con teclado (pestañas del menú con flechas, galería con flechas y Esc), enlace para saltar al contenido y animaciones desactivadas si el visitante pidió reducir movimiento.
